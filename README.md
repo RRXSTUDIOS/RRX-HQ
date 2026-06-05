@@ -13,13 +13,18 @@
             box-sizing: border-box;
         }
 
-        /* Smooth scroll enable */
         html {
             scroll-behavior: smooth;
         }
 
+        /* Red Smoke Dynamic Background Effect */
         body {
-            background-color: #0b0c10;
+            background-color: #07070a;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255, 0, 60, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(255, 0, 40, 0.12) 0%, transparent 50%),
+                linear-gradient(180deg, #07070a 0%, #120205 100%);
+            position: relative;
             color: #ffffff;
             font-family: 'Poppins', sans-serif;
             display: flex;
@@ -31,18 +36,36 @@
             overflow-x: hidden;
         }
 
+        /* Animated Smoke Overlay Layer */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/black-thread.png'), 
+                        radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(7, 7, 10, 0.8) 90%);
+            opacity: 0.6;
+            z-index: -1;
+            pointer-events: none;
+        }
+
         /* Main Container with Neon Red Glow */
         .container {
             width: 100%;
             max-width: 650px;
-            background: #12131c;
+            background: rgba(18, 19, 28, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             padding: 35px;
             border-radius: 24px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 0, 60, 0.1);
             border: 2px solid #ff003c;
-            animation: slideUp 1s ease-out forwards;
+            animation: slideUp 1s cubic-bezier(0.1, 1, 0.1, 1) forwards;
             opacity: 0;
             transform: translateY(40px);
+            z-index: 2;
         }
 
         /* Header Section (Logo + Title) */
@@ -63,7 +86,7 @@
             justify-content: center;
             align-items: center;
             background: #0b0c10;
-            box-shadow: 0 0 15px rgba(255, 0, 60, 0.4);
+            box-shadow: 0 0 20px rgba(255, 0, 60, 0.5);
         }
 
         .logo-box img {
@@ -142,7 +165,7 @@
             font-size: 1.6rem;
         }
 
-        /* Social Brand Outline Alignment */
+        /* Brand Outlines */
         .social-box.youtube { border-color: #ff0000; color: #ff0000; }
         .social-box.instagram { border-color: #e1306c; color: #e1306c; }
         .social-box.tiktok { border-color: #00f2fe; color: #00f2fe; }
@@ -164,7 +187,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Business Email Box - Green SS styled Solid Premium Accent */
+        /* Business Email Box - Green Solid Premium Outline */
         .email-box {
             border: 2px solid #45f3ff;
             border-radius: 16px;
@@ -193,7 +216,7 @@
             text-shadow: 0 0 8px rgba(69, 243, 255, 0.3);
         }
 
-        /* White Neon Glow Footer Setup */
+        /* White Neon Glow Footer */
         .footer-glow {
             margin-top: 40px;
             text-align: center;
@@ -205,13 +228,14 @@
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.4);
             animation: fadeIn 1.5s ease-out 0.5s forwards;
             opacity: 0;
+            z-index: 2;
         }
 
-        /* Keyframe Animations for Entrance Elements */
+        /* Keyframe Animations */
         @keyframes slideUp {
             0% {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(60px);
             }
             100% {
                 opacity: 1;
@@ -238,7 +262,7 @@
     <div class="container">
         <div class="header">
             <div class="logo-box">
-                <img src="rrp.jpg" alt="RedRrox Logo">
+                <img src="rrxnlogo.png" alt="RedRrox Logo">
             </div>
             <div class="title-box">
                 <h1>REDRROX</h1>
@@ -247,7 +271,7 @@
 
         <div class="description-box">
             <h2>About ME :)</h2>
-            <p>Welcome to REDRROX HQ!</p>
+            <p>Welcome to my official website!</p>
             <p>I'm a passionate gamer who loves exploring new worlds, mastering challenges, and sharing exciting gaming moments with the community. This is the central hub for all my content, social media profiles, and updates. Whether you're here for gameplay, entertainment, or collaboration opportunities, you're in the right place.</p>
             <p>Feel free to connect with me through YouTube, Instagram, Discord, Telegram, TikTok, or reach out via my business email.</p>
             <p>Thanks for stopping by, and I'll see you in the game!</p>
