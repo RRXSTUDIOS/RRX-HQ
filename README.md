@@ -271,7 +271,7 @@
 
         <div class="description-box">
             <h2>About ME :)</h2>
-            <p>Welcome to my official website!</p>
+            <p>Welcome to REDRROX HQ!</p>
             <p>I'm a passionate gamer who loves exploring new worlds, mastering challenges, and sharing exciting gaming moments with the community. This is the central hub for all my content, social media profiles, and updates. Whether you're here for gameplay, entertainment, or collaboration opportunities, you're in the right place.</p>
             <p>Feel free to connect with me through YouTube, Instagram, Discord, Telegram, TikTok, or reach out via my business email.</p>
             <p>Thanks for stopping by, and I'll see you in the game!</p>
