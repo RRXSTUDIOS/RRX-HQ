@@ -72,7 +72,7 @@
         }
 
         .title-box h1 {
-            font-family: 'Cinzel', serif; /* Premium Font */
+            font-family: 'Cinzel', serif;
             font-size: 2rem;
             color: #45f3ff;
             letter-spacing: 2px;
@@ -100,7 +100,7 @@
         .description-box p {
             font-size: 0.95rem;
             line-height: 1.6;
-            color: #c5a880; /* Elegant soft color */
+            color: #c5a880;
         }
 
         /* Social Icons Grid */
@@ -126,7 +126,7 @@
             font-size: 1.5rem;
         }
 
-        /* Hover & Custom Border Colors based on your image */
+        /* Custom Colors matching your sketch indicators */
         .social-box.youtube { border-color: #ff0000; color: #ff0000; }
         .social-box.instagram { border-color: #e1306c; color: #e1306c; }
         .social-box.tiktok { border-color: #00f2fe; color: #00f2fe; }
@@ -180,7 +180,7 @@
         /* Responsive Design */
         @media (max-width: 480px) {
             .header { flex-direction: column; text-align: center; }
-            .social-grid { grid-template-columns: repeat(3, 1fr); }
+            .social-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
             .title-box { width: 100%; }
         }
     </style>
@@ -188,10 +188,9 @@
 <body>
 
     <div class="container">
-        <!-- Upore logo abong RedRrox name -->
+        <!-- Logo and Title section -->
         <div class="header">
             <div class="logo-box">
-                <!-- Tomar logo file rrp.jpg ekhane load hobe -->
                 <img src="rrp.jpg" alt="RedRrox Logo">
             </div>
             <div class="title-box">
@@ -199,38 +198,42 @@
             </div>
         </div>
 
-        <!-- Boro Description Box -->
+        <!-- Description Box -->
         <div class="description-box">
             <h2>About ME :)</h2>
-            <!-- Ekhane tumi je discription dibe seta bosiye nio -->
-            <p>Welcome to my official page! I am a content creator and developer. Write your custom high-quality description here to attract your audience.</p>
+            <p>Welcome to my official page! Stay connected with me through all my social platforms linked below. For any business inquiries, feel free to drop an email.</p>
         </div>
 
-        <!-- 5ta Social Icons (Horizontal Grid) -->
+        <!-- Updated Social Links with your URLs -->
         <div class="social-grid">
-            <a href="YOUR_YOUTUBE_LINK" class="social-box youtube" target="_blank">
+            <!-- 1st: YouTube -->
+            <a href="http://www.youtube.com/@redrrox" class="social-box youtube" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span>YouTube</span>
             </a>
-            <a href="YOUR_INSTAGRAM_LINK" class="social-box instagram" target="_blank">
+            <!-- 2nd: Instagram -->
+            <a href="https://www.instagram.com/red.rrox/" class="social-box instagram" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <span>Instagram</span>
             </a>
-            <a href="YOUR_TIKTOK_LINK" class="social-box tiktok" target="_blank">
+            <!-- 3rd: TikTok -->
+            <a href="https://www.tiktok.com/@redrrox?is_from_webapp=1&sender_device=pc" class="social-box tiktok" target="_blank">
                 <i class="fab fa-tiktok"></i>
                 <span>TikTok</span>
             </a>
-            <a href="YOUR_TELEGRAM_LINK" class="social-box telegram" target="_blank">
+            <!-- 4th: Telegram -->
+            <a href="https://t.me/+ykkZkbJB6SVjZjhl" class="social-box telegram" target="_blank">
                 <i class="fab fa-telegram"></i>
                 <span>Telegram</span>
             </a>
-            <a href="YOUR_DISCORD_LINK" class="social-box discord" target="_blank">
+            <!-- 5th: Discord -->
+            <a href="https://discord.gg/Yp4YvTVxwr" class="social-box discord" target="_blank">
                 <i class="fab fa-discord"></i>
                 <span>Discord</span>
             </a>
         </div>
 
-        <!-- Shobcheye niche Business Email Box -->
+        <!-- Business Email Box -->
         <div class="email-box">
             <a href="mailto:yourbusiness@email.com">
                 <i class="fas fa-envelope" style="color: #45f3ff;"></i>
