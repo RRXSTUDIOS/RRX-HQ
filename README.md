@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REDRROX</title>
+    <!-- Google Fonts for Premium look -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -260,15 +262,18 @@
 <body>
 
     <div class="container">
+        <!-- Logo and Title section -->
         <div class="header">
             <div class="logo-box">
-                <img src="rrxnlogo.png" alt="RedRrox Logo">
+                <!-- Tumar dynamic original logo back kora hoyeche -->
+                <img src="rrp.jpg" alt="RedRrox Logo">
             </div>
             <div class="title-box">
                 <h1>REDRROX</h1>
             </div>
         </div>
 
+        <!-- Description Box filled with custom gamer bio -->
         <div class="description-box">
             <h2>About ME :)</h2>
             <p>Welcome to REDRROX HQ!</p>
@@ -277,6 +282,7 @@
             <p>Thanks for stopping by, and I'll see you in the game!</p>
         </div>
 
+        <!-- Social Icons Grid Links -->
         <div class="social-grid">
             <a href="http://www.youtube.com/@redrrox" class="social-box youtube" target="_blank">
                 <i class="fab fa-youtube"></i>
@@ -300,6 +306,7 @@
             </a>
         </div>
 
+        <!-- Styled Business Email Box -->
         <div class="email-box">
             <a href="mailto:rrxstudiosofficial@gmail.com">
                 <i class="fas fa-envelope"></i>
@@ -308,6 +315,7 @@
         </div>
     </div>
 
+    <!-- Neon White Glowing Footer Section -->
     <div class="footer-glow">
         &copy; 2026 REDRROX HQ | POWERED BY RRX STUDIOS
     </div>
